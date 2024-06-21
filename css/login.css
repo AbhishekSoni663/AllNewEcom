@@ -1,0 +1,118 @@
+ body{
+ font-family: var(--Jost-sans-serif);
+
+ }
+.logo_content {
+    width: 530px;
+    margin: 0 auto;
+    padding: 60px;
+}
+.login_formform {
+    font-family: "Jost", sans-serif;
+}
+.input_box {
+    height: 42px;
+}
+.login_form label {
+    font-size: var(--font-14);
+    color:var(--color-black);
+    font-weight:var(--font-weight-400);
+}
+a.log_tex {
+    font-family: Jost, sans-serif;
+    font-size: var(--font-17);
+    font-weight: var(--font-weight-600);
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+}
+.login_btn a {
+    background: var(--color-primary);
+    font-size: var(--font-15);
+    /* font-family: "Jost", sans-serif; */
+    font-weight: var(--font-weight-500);
+}
+.login_btn a:active {
+    background: var(--color-primary) !important;
+}
+.login_btn:hover a {
+    opacity: 0.8 !important;
+    background-color: var(--color-primary);
+}
+a.lost_text {
+    color: var(--color-primary);
+    font-size: var(--font-16);
+    font-weight: var(--font-weight-400);
+}
+/* a.lost_text {
+    color: red;
+} */
+.support_text {
+    font-size: var(--font-12);
+}
+.support_text a{
+    color: var(--color-primary);
+    font-size: var(--font-12);
+    font-weight: var(--font-weight-400);
+} 
+
+.support_text:hover a {
+    color: #0a58ca !important;
+}
+.lost_text:hover {
+    color: #2540bf !important;
+}
+li.log_actv .active {
+    color: black !important;
+} 
+.log_tex {
+    color: #c2c2d3 !important;
+}
+.log_tex:hover {
+    color:#c2c2d3 !important;
+}
+input.reme_chek {
+    border-color: black;
+    height: 13px !important;
+    width: 13px !important;
+}
+.form-check-input:focus {
+    box-shadow: 0 0 0 0 rgb(9 9 9 / 25%) !important;
+    border-color: #0c0d0d !important;
+}
+@media only screen and (max-width: 780px) {
+ 
+    .logo_content {
+        width: 100% !important;
+        margin: 0 auto;
+        padding: 60px;
+    }
+  }
+  @media only screen and (max-width: 780px) {
+    .logo_content {
+        padding: 20px;
+    }
+  }
+/* ----------------------------------------------------lost_pasword page---------------------------------- */
+.rest_btn {
+    background: var(--color-primary);
+    padding: 10px 20px;
+    display: inline-block;
+}.lost_content label {
+    font-size: var(--font-14);
+    color: var(--color-black);
+    font-weight: var(--font-weight-400);
+}p.add_text {
+    /* font-family: "Jost", sans-serif; */
+    font-size: 16px;
+}.form-control.input_box:focus {
+    border-color: var(--color-black) !important;
+    box-shadow: 0 0 0 0 rgb(14 14 14 / 25%) !important;
+}li.nav-item.slaes:after {
+    content: "/";
+    margin-left: 4px;
+    margin-right: 4px;
+    opacity: 0.3;
+    position: absolute;
+    top: 0;
+
+}

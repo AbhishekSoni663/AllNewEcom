@@ -1,0 +1,52 @@
+@media only screen and (max-width: 1400px) {
+    .product {
+        grid-template-columns: 38% 37% 19%;
+    }
+    }
+    
+    @media only screen and (max-width: 1200px) {
+    
+        .container {
+            max-width: 1060px !important;
+        }
+        .product {
+            grid-template-columns: 30% 39% 19%;
+        }
+    }
+    
+    
+    
+    @media only screen and (max-width: 991px) {
+    .product {
+    
+        grid-template-columns: 30% 30% 34%;
+    }
+    .Bsic_clrbox h1 {
+        font-size: 16px;
+    }
+    .receive_tex {
+        font-size: 15px;
+    }
+    .receive_tex span {
+        font-size: 15px;
+    }
+    .rdo_btn label {
+        padding: 6px 40px;
+    }
+    }
+    @media only screen and (max-width: 767px) {
+    
+    
+        .product {
+            grid-template-columns: 100%
+        }
+    }
+    
+    @media only screen and (max-width: 375px) {
+    
+        ul.breadcrumb {
+            padding: 10px 0px;
+        }
+        
+    }
+    
