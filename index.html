@@ -36,7 +36,7 @@
   <header>
     <!-- First-top One Header- Start-->
     <div class="container-fluid px-xl-5 px-md-2 first-container border-bottom">
-      <div class="container">
+      <div class="container d-lg-block d-none">
         <div class="first-header-link d-flex align-items-center justify-content-between w-100 flex-wrap">
           <ul class="navbar-nav first-nav">
             <li class="list-group-item d-flex gap-3">
@@ -82,20 +82,20 @@
         <div class="container-lg px-xl-2">
           <div class="d-flex  justify-content-between">
             <a class="navbar-brand head2-a" href="#">UOMO</a>
-            <button class="navbar-toggler border-0 shadow-none pe-1" type="button" data-bs-toggle="offcanvas"
+            <button class="navbar-toggler border-0 shadow-none pe-2 me-1" type="button" data-bs-toggle="offcanvas"
               data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
+          <i class="bi bi-search"></i>
             </button>
             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar"
               aria-labelledby="offcanvasNavbarLabel">
               <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">UOMO</h5>
+                <!-- <h5 class="offcanvas-title" id="offcanvasNavbarLabel">UOMO</h5> -->
                 <button type="button" class="btn-close shadow-none border-0" data-bs-dismiss="offcanvas"
                   aria-label="Close"></button>
               </div>
 
-              <div class="offcanvas-body w-100 ms-auto">
-                <ul class="navbar-nav header-two justify-content-end gap-4 flex-grow-1 pe-2 align-items-center">
+              <div class="offcanvas-body w-100 ms-auto px-2">
+                <ul class="navbar-nav header-two justify-content-end gap-4 flex-grow-1 pe-0 align-items-center">
                   <div class="input-group first-group">
                     <input type="text" class="form-control first-inp bg-transparent border-0 py-2"
                       placeholder="Search products" />
@@ -105,7 +105,7 @@
                     <span class="input-group-text border-0">
                       <i class="bi bi-search"></i></span>
                   </div>
-                  <div class="d-flex gap-3 head_nav2">
+                  <!-- <div class="d-flex gap-3 head_nav2">
                     <li class="nav-item">
                       <a class="nav-link active" aria-current="page" href="#"><i class="fa-regular fa-user"></i></a>
                     </li>
@@ -123,7 +123,7 @@
                         <i class="fa fa-bars" aria-hidden="true"></i>
                       </a>
                     </li>
-                  </div>
+                  </div> -->
                 </ul>
               </div>
             </div>
@@ -358,7 +358,7 @@
   </section>
   <!-- -----------------------------------------------------section 1 end -------------------------->
   <!--------------------------section 2 start ------------------------------------- -->
-  <section>
+  <section class="pt-lg-5 pb-lg-4 pt-5 pb-3">
     <div class="container">
       <div class="home-demo">
 
@@ -445,9 +445,10 @@
                 </div>
 
                 <div class="icon">
-                  <img src="./images/vivo.png" width="50" height="40"
+                  <img src="/images/vivo.png" width="50" height="40"
                     onerror="this.src='https:media.genics.in/common/image-place-holder.webp'"
                     alt="product/thumbnail/1690608428_9967.webp">
+
                 </div>
 
               </div>
@@ -712,11 +713,11 @@
 
   <!----------------------------- Latest Product section 5 start----------------------- -->
   <section class="position-relative">
-    <div class="container position-relative">
+    <div class="container-lg position-relative">
       <div class="product-heading py-xl-4 d-flex align-items-center justify-content-center w-100">
-        <div class="w-75 text-center">
+        <div class="d-flex flex-column align-items-md-center ">
           <h1>Latest Product</h1>
-          <p>
+          <p class="lst-p text-md-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
             non rem eveniet assumenda, repudiandae atque veritatis asperiores
             voluptas numquam neque odit, id repellendus cum dolor nihil quo.
@@ -725,7 +726,7 @@
         </div>
       </div>
      
-      <swiper-container class="swiper-container2  py-xl-5" autoplay-delay="2500"
+      <swiper-container class="swiper-container2  pt-lg-4 pb-lg-5 pb-3 pt-3" autoplay-delay="2500"
         autoplay-disable-on-interaction="false">
         <swiper-slide class="swiper-slide">
           <div class="product-bg">
@@ -735,10 +736,34 @@
               <div class="product-box2"></div>
               <div class="product-icons product-box3">
                 <div class="pr-icon">
-                  <i class="bi bi-heart"></i>
-                  <i class="bi bi-repeat my-2"></i>
-                  <i class="fa-solid fa-maximize resaiz mb-2" style="font-weight: 600;"></i>
-                  <i class="bi bi-bag"></i>
+                  <span class="pr-i1"><i class="bi bi-heart"></i></span>
+                  <span class="pr-i1"><i class="bi bi-repeat mt-2 mb-2"></i></span>
+                  <span class="pr-i1 mb-2">
+                    <i><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="15"
+                      height="15"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class=" mt-0 icon-tabler icons-tabler-outline icon-tabler-arrows-maximize"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M16 4l4 0l0 4" />
+                      <path d="M14 10l6 -6" />
+                      <path d="M8 20l-4 0l0 -4" />
+                      <path d="M4 20l6 -6" />
+                      <path d="M16 20l4 0l0 -4" />
+                      <path d="M14 14l6 6" />
+                      <path d="M8 4l-4 0l0 4" />
+                      <path d="M4 4l6 6" />
+                    </svg>
+                  </i>
+                  </span>
+                 <span class="pr-i1"><i class="bi bi-bag"></i></span> 
                 </div>
               </div>
             </div>
@@ -771,10 +796,34 @@
               <div class="product-box2"></div>
               <div class="product-icons product-box3">
                 <div class="pr-icon">
-                  <i class="bi bi-heart"></i>
-                  <i class="bi bi-repeat my-2"></i>
-                  <i class="fa-solid fa-maximize resaiz mb-2" style="font-weight: 600;"></i>
-                  <i class="bi bi-bag"></i>
+                  <span class="pr-i1"><i class="bi bi-heart"></i></span>
+                  <span class="pr-i1"><i class="bi bi-repeat mt-2 mb-2"></i></span>
+                  <span class="pr-i1 mb-2">
+                    <i><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="15"
+                      height="15"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class=" mt-0 icon-tabler icons-tabler-outline icon-tabler-arrows-maximize"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M16 4l4 0l0 4" />
+                      <path d="M14 10l6 -6" />
+                      <path d="M8 20l-4 0l0 -4" />
+                      <path d="M4 20l6 -6" />
+                      <path d="M16 20l4 0l0 -4" />
+                      <path d="M14 14l6 6" />
+                      <path d="M8 4l-4 0l0 4" />
+                      <path d="M4 4l6 6" />
+                    </svg>
+                  </i>
+                  </span>
+                 <span class="pr-i1"><i class="bi bi-bag"></i></span> 
                 </div>
               </div>
             </div>
@@ -804,10 +853,34 @@
               <div class="product-box2"></div>
               <div class="product-icons product-box3">
                 <div class="pr-icon">
-                  <i class="bi bi-heart"></i>
-                  <i class="bi bi-repeat my-2"></i>
-                  <i class="fa-solid fa-maximize resaiz mb-2" style="font-weight: 600;"></i>
-                  <i class="bi bi-bag"></i>
+                  <span class="pr-i1"><i class="bi bi-heart"></i></span>
+                  <span class="pr-i1"><i class="bi bi-repeat mt-2 mb-2"></i></span>
+                  <span class="pr-i1 mb-2">
+                    <i><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="15"
+                      height="15"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class=" mt-0 icon-tabler icons-tabler-outline icon-tabler-arrows-maximize"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M16 4l4 0l0 4" />
+                      <path d="M14 10l6 -6" />
+                      <path d="M8 20l-4 0l0 -4" />
+                      <path d="M4 20l6 -6" />
+                      <path d="M16 20l4 0l0 -4" />
+                      <path d="M14 14l6 6" />
+                      <path d="M8 4l-4 0l0 4" />
+                      <path d="M4 4l6 6" />
+                    </svg>
+                  </i>
+                  </span>
+                 <span class="pr-i1"><i class="bi bi-bag"></i></span> 
                 </div>
               </div>
             </div>
@@ -837,10 +910,34 @@
               <div class="product-box2"></div>
               <div class="product-icons product-box3">
                 <div class="pr-icon">
-                  <i class="bi bi-heart"></i>
-                  <i class="bi bi-repeat my-2"></i>
-                  <i class="fa-solid fa-maximize resaiz mb-2" style="font-weight: 600;"></i>
-                  <i class="bi bi-bag"></i>
+                  <span class="pr-i1"><i class="bi bi-heart"></i></span>
+                  <span class="pr-i1"><i class="bi bi-repeat mt-2 mb-2"></i></span>
+                  <span class="pr-i1 mb-2">
+                    <i><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="15"
+                      height="15"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class=" mt-0 icon-tabler icons-tabler-outline icon-tabler-arrows-maximize"
+                    >
+                      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                      <path d="M16 4l4 0l0 4" />
+                      <path d="M14 10l6 -6" />
+                      <path d="M8 20l-4 0l0 -4" />
+                      <path d="M4 20l6 -6" />
+                      <path d="M16 20l4 0l0 -4" />
+                      <path d="M14 14l6 6" />
+                      <path d="M8 4l-4 0l0 4" />
+                      <path d="M4 4l6 6" />
+                    </svg>
+                  </i>
+                  </span>
+                 <span class="pr-i1"><i class="bi bi-bag"></i></span> 
                 </div>
               </div>
             </div>
@@ -976,8 +1073,6 @@
           <div class="lastimg">
             <div class="lastone"></div>
             <div class="alfa bita"></div>
-
-
           </div>
         </div>
       </div>
@@ -1004,6 +1099,7 @@
       <div id="carousel2" class="owl-carousel owl-carousel-two owl-theme">
         <div class="item monial-item pt-xl-5 mt-xl-4 pt-1 mt-1 pb-xl-4 pb-1 mb-xl-2 mb-1">
           <div class="card border-0 rounded-0 monial-card">
+            <img src="./images/profile.jpg" onerror="this.src='https://media.genics.in/common/image-place-holder.webp'" alt="" class="card-img w-25">
             <div class="card-body monial-body">
               <div class="monial-rate d-flex justify-content-center gap-2">
                 <i class="bi bi-star-fill"></i>
@@ -1024,6 +1120,7 @@
         </div>
         <div class="item monial-item pt-xl-5 mt-xl-4 pt-1 mt-1 pb-xl-4 pb-1 mb-xl-2 mb-1">
           <div class="card border-0 rounded-0 monial-card m-card1">
+            <img src="./images/profile.jpg" onerror="this.src='https://media.genics.in/common/image-place-holder.webp'" alt="" class="card-img w-25">
             <div class="card-body monial-body">
               <div class="monial-rate d-flex justify-content-center gap-2">
                 <i class="bi bi-star-fill"></i>
@@ -1044,6 +1141,7 @@
         </div>
         <div class="item monial-item pt-xl-5 mt-xl-4 pt-1 mt-1 pb-xl-4 pb-1 mb-xl-2 mb-1">
           <div class="card border-0 rounded-0 monial-card">
+            <img src="./images/profile.jpg" onerror="this.src='https://media.genics.in/common/image-place-holder.webp'" alt="" class="card-img w-25">
             <div class="card-body monial-body">
               <div class="monial-rate d-flex justify-content-center gap-2">
                 <i class="bi bi-star-fill"></i>
@@ -1116,7 +1214,7 @@
                       stroke-width="1"
                       stroke-linecap="round"
                       stroke-linejoin="round"
-                      class="icon icon-tabler icons-tabler-outline icon-tabler-arrows-maximize"
+                      class="icon-tabler icons-tabler-outline icon-tabler-arrows-maximize"
                     >
                       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                       <path d="M16 4l4 0l0 4" />
@@ -1199,7 +1297,7 @@
                         stroke-width="1"
                         stroke-linecap="round"
                         stroke-linejoin="round"
-                        class="icon icon-tabler icons-tabler-outline icon-tabler-arrows-maximize"
+                        class=" icon-tabler icons-tabler-outline icon-tabler-arrows-maximize"
                       >
                         <path stroke="none" d="M0 0h24v24H0z" fill="none" />
                         <path d="M16 4l4 0l0 4" />
@@ -1352,7 +1450,7 @@
           <div class="row">
             <div class="col-12">
               <div class="d-flex justify-content-center  gap-3 mt-4 ">
-                <input type="text" class="form-control get_box  rounded-1 " id="uemail" placeholder="Your email address">
+                <input type="text" class="form-control get_box  rounded-1 shadow-none id="uemail" placeholder="Your email address">
                 <button type="button" class=" btn join_bottn rounded-0 px-5 text-white ">Join</button>
   
               </div>
@@ -1369,9 +1467,9 @@
   <footer>
     <div class="foter_top pb-md-5">
       <div class="container-lg container-fluid ">
-        <div class="row m-0 gap-lg-0 gap-5 justify-content-md-flex-start justify-content-center">
+        <div class="row m-0 gap-md-0 gap-3 justify-content-md-flex-start justify-content-center">
 
-          <div class="col-lg-4 col-md-7">
+          <div class="col-lg-4 col-md-8">
             <div class="box_one">
               <ul class="list-group ">
 
@@ -1391,7 +1489,7 @@
                   <a href="#" class="nav-link">+1 246-345-0695</a>
                 </li>
 
-                <li class="nav-item  pt-4">
+                <li class="nav-item  pt-lg-4 pt-2">
                   <nav class="navbar navbar-expand">
 
                     <ul class="navbar-nav gap-3 ">
@@ -1422,40 +1520,40 @@
           <div class="col-lg-2 col-md-4">
             <div class="box_one">
               <ul class="list-group ">
-                <li><a href="#" class="nav-link pb-2 fcolr"> COMPANY</a></li>
-                <li><a href="#" class="nav-link pb-2"> About Us</a></li>
-                <li><a href="#" class="nav-link py-2"> Careers</a></li>
-                <li><a href="#" class="nav-link"> Affiliates</a></li>
-                <li><a href="#" class="nav-link py-2"> Blog</a></li>
-                <li><a href="#" class="nav-link py-2"> countact Us</a></li>
+                <li><a href="#" class="nav-link pb-2  fcolr"> COMPANY</a></li>
+                <li><a href="#" class="nav-link pt-md-2 pt-1"> About Us</a></li>
+                <li><a href="#" class="nav-link pt-md-2 pt-1 "> Careers</a></li>
+                <li><a href="#" class="nav-link pt-md-2 pt-1"> Affiliates</a></li>
+                <li><a href="#" class="nav-link pt-md-2 pt-1"> Blog</a></li>
+                <li><a href="#" class="nav-link pt-md-2 pt-1 pb-md-3 pb-1"> countact Us</a></li>
               </ul>
             </div>
           </div>
           <!-- 333 -->
-          <div class="col-lg-2 col-md-7">
+          <div class="col-lg-2 col-md-8">
             <div class="box_one">
               <ul class="list-group ">
                 <li><a href="#" class="nav-link pb-2 fcolr">SHOP</a></li>
-                <li> <a href="#" class="nav-link pb-2"> New Arrivals</a></li>
-                <li> <a href="#" class="nav-link py-2"> Accessores</a></li>
-                <li> <a href="#" class="nav-link"> Men</a></li>
-                <li> <a href="#" class="nav-link py-2"> Women</a></li>
-                <li> <a href="#" class="nav-link py-2">Shop All</a></li>
+                <li> <a href="#" class="nav-link pt-md-2 pt-1 "> New Arrivals</a></li>
+                <li> <a href="#" class="nav-link pt-md-2 pt-1 "> Accessores</a></li>
+                <li> <a href="#" class="nav-link pt-md-2 pt-1"> Men</a></li>
+                <li> <a href="#" class="nav-link pt-md-2 pt-1"> Women</a></li>
+                <li> <a href="#" class="nav-link pt-md-2 pt-1">Shop All</a></li>
               </ul>
             </div>
           </div>
 
           <!-- 444 -->
-          <div class="col-lg-2 col-md-3 col-md-4">
+          <div class="col-lg-2 col-md-4 ">
             <div class="box_one">
               <ul class="list-group ">
                 <li><a href="#" class="nav-link pb-2 fcolr"> HELP</a></li>
-                <li> <a href="#" class="nav-link pb-2">Customer</a></li>
-                <li> <a href="#" class="nav-link py-2"> May Account </a></li>
-                <li> <a href="#" class="nav-link">Find a Store </a></li>
-                <li> <a href="#" class="nav-link py-2">Lagal & Privacy </a></li>
-                <li> <a href="#" class="nav-link py-2">Contact</a></li>
-                <li> <a href="#" class="nav-link">Gift Card</a></li>
+                <li> <a href="#" class="nav-link pt-md-2 pt-1">Customer</a></li>
+                <li> <a href="#" class="nav-link pt-md-2 pt-1"> May Account </a></li>
+                <li> <a href="#" class="nav-link pt-md-2 pt-1">Find a Store </a></li>
+                <li> <a href="#" class="nav-link pt-md-2 pt-1">Lagal & Privacy </a></li>
+                <li> <a href="#" class="nav-link pt-md-2 pt-1">Contact</a></li>
+                <li> <a href="#" class="nav-link pt-md-2 pt-1">Gift Card</a></li>
               </ul>
             </div>
           </div>
@@ -1464,10 +1562,10 @@
             <div class="box_one box_one-new">
               <ul class="list-group">
                 <li><a href="#" class="nav-link pb-2 fcolr"> OPENING TIME</a></li>
-                <li><a href="#" class="nav-link pb-2"> About Us</a></li>
-                <li><a href="#" class="nav-link pb-2">Mon-Fir: 8AM-9PM</a></li>
-                <li><a href="#" class="nav-link py-2">Sat 9AM-8PM</a></li>
-                <li><a href="#" class="nav-link py-2">Sun Close</a></li>
+                <li><a href="#" class="nav-link pt-md-2 pt-1"> About Us</a></li>
+                <li><a href="#" class="nav-link pt-md-2 pt-1">Mon-Fir: 8AM-9PM</a></li>
+                <li><a href="#" class="nav-link pt-md-2 pt-1">Sat 9AM-8PM</a></li>
+                <li><a href="#" class="nav-link pt-md-2 pt-1">Sun Close</a></li>
               </ul>
             </div>
           </div>
