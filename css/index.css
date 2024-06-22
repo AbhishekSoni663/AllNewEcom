@@ -219,14 +219,14 @@ opacity: 0.6;
 @media(max-width:375px){
   .th-h-icon{
     position: absolute;
-    top: 55% !important;
+    top: 50% !important;
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
 }
 .th-h-icon{
     position: absolute;
-    top: 53%;
+    top: 50%;
     left: 0px;
     z-index: 2;
     width: 100%;
