@@ -355,8 +355,7 @@ li {
   color: var(--color-fourteen);
 }a.fcolr {
   color: var(--color-lightblue);
-  font-weight: var(--font-weight-800);
-  font-weight: var(--font-600);
+  font-weight: var(--font-weight-600);
 }
 
 .carouse_title h2 {
