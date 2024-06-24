@@ -675,6 +675,10 @@ p.get_tex {
   width: 75px;
   height: 75px;
 }
+.later_imag {
+  height: 430px !important;
+  object-fit: cover !important;
+}
 }
 @media (max-width: 505px) {
 .first-container {
@@ -1095,17 +1099,17 @@ p.boldtext {
   .lastone {
   background-image: url(../images/gal5.webp) , url('https://media.genics.in/common/image-place-holder.webp');
   width: 100%;
-  height: 420px;
+  height: 320px;
   background-size: cover;
 }
 .pen1{
-  height: 360px;
+  height: 340px;
 }
 .pen2{
   height: 380px;
 }
 .pen3{
-  height: 350px;
+  height: 340px;
 }
 }
 /* .first:hover {
