@@ -33,7 +33,8 @@
 
 
 <body>
-  <header>
+  <section id="main-header">
+     <header >
     <!-- First-top One Header- Start-->
     <div class="container-fluid px-xl-5 px-md-2 first-container border-bottom">
       <div class="container d-lg-block d-none">
@@ -97,9 +98,9 @@
               <div class="offcanvas-body w-100 ms-auto px-2">
                 <ul class="navbar-nav header-two justify-content-end gap-4 flex-grow-1 pe-0 align-items-center">
                   <div class="input-group first-group">
-                    <input type="text" class="form-control first-inp bg-transparent border-0 py-2"
+                    <input type="text" class="form-control first-inp shadow-none bg-transparent border-0 py-2"
                       placeholder="Search products" />
-                    <select name="" id="inputGroupSelect02" class="form-select off-select1 border-0 bg-transparent">
+                    <select name="" id="inputGroupSelect02" class="form-select shadow-none off-select1 border-0 bg-transparent">
                       <option selected>All Category</option>
                     </select>
                     <span class="input-group-text border-0">
@@ -132,17 +133,18 @@
       </div>
     </nav>
     <!-- First-TopHeader Two-End -->
-  </header>
+     </header>
 
-  <!-- Third Header-Start -->
-  <nav class="navbar navbar-expand-lg ">
+    <!-- Third Header-Start -->
+     <nav class="navbar navbar-expand-lg pb-0">
     <div class="container-fluid container-lg px-lg-2 border-bottom">
       <div class="dropdown second-drop">
-        <button class="btn sec-drop-btn w-100 py-3 border-0 shadow-none" type="button" data-bs-toggle="dropdown"
+        <button id="dropdownMenuButton" class="btn third-cat-btn d-flex justify-content-center sec-drop-btn w-100 py-3 border-0 shadow-none" type="button" data-bs-toggle="dropdown"
           aria-expanded="false">
-          BROWSE CATEGORIES
+          <span class="d-md-block d-none">BROWSE CATEGORIES</span>
+        <a href="" class="third-cat-a"><img src="./images/categorya.png" class="d-md-none third-cat d-block" alt="" ></a>
         </button>
-        <ul class="dropdown-menu drp-menu1">
+        <ul class="dropdown-menu drp-menu1 custom-hide">
           <li><a class="dropdown-item my-1" href="#">Electronic</a></li>
           <li><a class="dropdown-item my-1" href="#">Computer</a></li>
           <li>
@@ -286,8 +288,9 @@
     </div>
     </div>
     </div>
-  </nav>
-  <!-- Third-Header-End -->
+     </nav>
+    <!-- Third-Header-End -->
+  </section>
   <!-- Carousel-PayalMam -->
   <section class="onesec">
     <div class="container-fluid px-0">
@@ -305,7 +308,7 @@
           <div class="carousel-item active" data-bs-interval="10000">
             <div class="phone_img1">
 
-              <div class="carousel-caption d-block carouse_title">
+              <div class="carousel-caption d-none carouse_title">
                 <h2 class="text-white">Zania Black Edition</h2>
                 <p class="text-white">Curvy Bevel<br> Dual Audio</p>
                 <div class="banner__buttons  d-flex justify-content-center mt-5">
@@ -319,7 +322,7 @@
 
             <div class="phone_img2">
 
-              <div class="carousel-caption  d-block carouse_title">
+              <div class="carousel-caption  d-none carouse_title">
                 <h2 class="text-white">Delta Zertiga Processor</h2>
                 <p class="text-white">Full Screen<br> Display</p>
                 <div class="banner__buttons  d-flex justify-content-center mt-5">
@@ -333,7 +336,7 @@
 
             <div class="phone_img3">
 
-              <div class="carousel-caption  d-block carouse_title">
+              <div class="carousel-caption  d-none carouse_title">
                 <h2 class="text-white">Delta Zertiga Processor</h2>
                 <p class="text-white">Full Screen<br> Display</p>
                 <div class="banner__buttons  d-flex justify-content-center mt-5">
@@ -551,14 +554,14 @@
 
           </div>
         </swiper-container>
-
+        <div class="swiper-pagination3 d-flex justify-content-center"></div>
       </div>
     </div>
     </div>
   </section>
   <!---------------------------------section 2 start --------------------------- -->
 <!-- --------------------section 3 start------------------------------- -->
-<section>
+<!-- <section>
   <div class="container-fluid px-xl-5 py-md-5 py-4">
     <div class="row">
       <div class="col-lg-6 pe-xl-3 border-0 rounded-0">
@@ -631,8 +634,110 @@
       </div>
     </div>
   </div>
+</section> -->
+
+<!-- --------------------section 3 start------------------------------- -->
+<section class="onefhones d-md-block d-none">
+  <div class="container-fluid px-xl-5 py-md-5 py-4">
+    <div class="row">
+      <div class="col-sm-6 pe-xl-3 border-0 rounded-0">
+        <div class="card box-card border-0 rounded-0">
+          
+          <img src="./images/img1.jfif" class="over" onerror="this.src='https://media.genics.in/common/image-place-holder.webp'" alt="" width="100%" class="card-img rounded-0 object-fit-cover h-100" />
+          <div class="card-img-overlay rounded-0 ps-xl-5 ps-xl-5 ps-4 pt-xl-5">
+            <div class="banner-content pt-md-4 pt-0 align-items-baseline">
+              <div class="banner-inner">
+                <h4 class="entry-subtitle">NEW SEASON</h4>
+                <h2 class="entry-title size-42 bold">
+                  Big patterns are back in fashion
+                </h2>
+                <div class="entry-description">
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                    sed do eiusmod.
+                  </p>
+                </div>
+                <a href="#" class="btn link ps-0 d-flex align-items-center">Shop Now <i
+                    class="fa-solid fa-arrow-right-long ms-3"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-6 ps-xl-3">
+        <div class="card box-card1 rounded-0 border-0 pt-lg-0 mt-lg-0 pt-0 mt-0">
+          <img src="./images/banner-02.jpg" onerror="this.src='https://media.genics.in/common/image-place-holder.webp'" alt="" width="100%" class="card-img object-fit-cover rounded-0 h-100" />
+          <div class="card-img-overlay">
+            <div class="banner-content h-100 d-flex align-items-center">
+              <div class="banner-inner ps-xl-4 ps-2 pt-lg-0 pt-4">
+                <h4 class="entry-subtitle1">NEW SEASON</h4>
+                <h2 class="entry-title1 size-42 bold">
+                  The latest men's trends this season
+                </h2>
+                <div class="entry-description1">
+                  <p>
+                    Don't miss the opportunity.
+                  </p>
+                </div>
+                <a href="#" class="btn link ps-0 d-flex align-items-center">Shop Now <i
+                    class="fa-solid fa-arrow-right-long ms-3"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card rounded-0 border-0 box-card2 pt-lg-4 pt-3 mt-lg-0 mt-0">
+          <img src="./images/img2.jfif" onerror="this.src='https://media.genics.in/common/image-place-holder.webp'" alt="" width="100%" class="card-img object-fit-cover rounded-0 h-100" />
+          <div class="card-img-overlay">
+            <div class="banner-content h-100 d-flex align-items-center">
+              <div class="banner-inner ps-xl-4 ps-2 pt-lg-0 pt-4">
+                <h4 class="entry-subtitle1">NEW SEASON</h4>
+                <h2 class="entry-title1 size-42 bold">
+                  Show your fashion with summer shoes
+                </h2>
+                <div class="entry-description1">
+                  <p>
+                    Don't miss the opportunity.
+                  </p>
+                </div>
+                <a href="#" class="btn link ps-0 d-flex align-items-center">Shop Now <i
+                    class="fa-solid fa-arrow-right-long ms-3"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
+<!-- I fhone section -->
+<section class="pb-4 pt-3 twofhones d-md-none d-block">
+<div class="container-md container-fluid">
+  <div class="row iphones">
+   <div class="col-6 ifhone">
+    <div class="position-relative">
+      <img src="./images/ifhone15.jfif" alt="" width="100%">
+      <div class="position-absolute arrow"> <a href="#" class="btn link ps-0 d-flex align-items-center text-white">Shop Now <i
+        class="fa-solid fa-arrow-right-long ms-3"></i>
+    </a></div>
+    </div>
+   </div>
+
+  <div class="col-6 ifhone1">
+    <div class="position-relative">
+      <img src="./images/ifhone15.jfif" alt="" width="100%">
+      <div class="position-absolute arrow"> <a href="#" class="btn link ps-0 d-flex align-items-center text-white">Shop Now <i
+        class="fa-solid fa-arrow-right-long ms-3"></i>
+    </a></div>
+    </div>
+   </div>
+  </div>
+</div>
+</section>
+<!-- I fhone section -->
 <!-- --------------------section 3 end------------------------------- -->
 
 <!-- --------------------section 4------------------------------- -->
@@ -716,7 +821,7 @@
     <div class="container-lg position-relative">
       <div class="product-heading py-xl-4 d-flex align-items-center justify-content-center w-100">
         <div class="d-flex flex-column align-items-md-center ">
-          <h1>Latest Product</h1>
+          <h1 class="lst-p-h1">Latest Product</h1>
           <p class="lst-p text-md-center">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis
             non rem eveniet assumenda, repudiandae atque veritatis asperiores
@@ -726,7 +831,7 @@
         </div>
       </div>
      
-      <swiper-container class="swiper-container2  pt-lg-4 pb-lg-5 pb-3 pt-3" autoplay-delay="2500"
+      <swiper-container class="swiper-container2  pt-lg-4 pb-lg-5 pb-2 pt-3" autoplay-delay="2500"
         autoplay-disable-on-interaction="false">
         <swiper-slide class="swiper-slide">
           <div class="product-bg">
@@ -778,7 +883,7 @@
                 <img src="./product-img/star (7).png" onerror="this.src='https://media.genics.in/common/image-place-holder.webp'" alt="" width="13px" height="13px"
                   onerror="this.src='https:media.genics.in/common/image-place-holder.webp'"
                   alt="product/thumbnail/1690608428_9967.webp /">
-
+                  &nbsp; 2 reviews
               </h6>
               <h5>Basics Smartphone</h5>
               <p><del>$25.90</del> $19.90</p>
@@ -983,9 +1088,264 @@
   <!------------------------------------------Latest Product section 5 end------------------------------->
 
 
+    <!-- Best Sellers -->
+    <section class="container-lg pb-md-5 pb-3 pt-md-2 pt-3">
+      <div class="best-seller">
+        <div class="best-seler-head d-flex flex-column align-items-md-center">
+          <h1 class="bt-s-h1 text-md-center">Best Seller</h1>
+          <p class="bt-s-p text-md-center">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+            suspendisse ultrices gravida. Risus commodo viverra vel facilisis.</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-6 best-sell-cols">
+            <div class="product-bg">
+              <div class="product-head7 d-flex position-relative">
+                <div class="bt-sellbox-h5">
+                  <h5 class="product-box">24%</h5>
+                  <h5 class="product-box">New</h5>
+                </div>
+                <div class="product-box1"></div>
+                <div class="product-box2"></div>
+                <div class="product-icons product-box3">
+                  <div class="pr-icon bt-sell-icon">
+                    <span class="pr-i1 d-md-block d-none"><i class="bi bi-heart"></i></span>
+                    <span class="pr-i1 d-md-block d-none"><i class="bi bi-repeat mt-2 mb-2"></i></span>
+                    <span class="pr-i1 mb-2 d-md-block d-none pr-i2">
+                      <i><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="15"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class=" mt-0 icon-tabler  icons-tabler-outline icon-tabler-arrows-maximize"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M16 4l4 0l0 4" />
+                        <path d="M14 10l6 -6" />
+                        <path d="M8 20l-4 0l0 -4" />
+                        <path d="M4 20l6 -6" />
+                        <path d="M16 20l4 0l0 -4" />
+                        <path d="M14 14l6 6" />
+                        <path d="M8 4l-4 0l0 4" />
+                        <path d="M4 4l6 6" />
+                      </svg>
+                    </i>
+                    </span>
+                   <span class="pr-i1 pr-i2-svg"><i class="bi bi-bag"></i></span> 
+                  </div>
+                </div>
+              </div>
+              <div class="pagination d-flex justify-content-between mb-1">
+                <div class="page-bar hovered"></div>
+                <div class="page-bar1"></div>
+                <div class="page-bar2"></div>
+                <div class="page-bar3"></div>
+              </div>
+              <div class="product-detail pt-1 pb-2">
+                <h6 class="d-flex align-items-center py-1">
+                  <img src="./product-img/star (7).png" onerror="this.src='https://media.genics.in/common/image-place-holder.webp'" alt="" width="13px" height="13px"
+                    onerror="this.src='https:media.genics.in/common/image-place-holder.webp'"
+                    alt="product/thumbnail/1690608428_9967.webp /">
+                    &nbsp; 2 reviews
+                </h6>
+                <h5>Basics Smartphone</h5>
+                <p><del>$25.90</del> $19.90</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 best-sell-cols">
+            <div class="product-bg">
+              <div class="product-head8 d-flex position-relative">
+                <div class="bt-sellbox-h5">
+                  <h5 class="product-box">24%</h5>
+                  <h5 class="product-box">New</h5>
+                </div>
+                <div class="product-box1"></div>
+                <div class="product-box2"></div>
+                <div class="product-icons product-box3">
+                  <div class="pr-icon bt-sell-icon">
+                    <span class="pr-i1 d-md-block d-none"><i class="bi bi-heart"></i></span>
+                    <span class="pr-i1 d-md-block d-none"><i class="bi bi-repeat mt-2 mb-2"></i></span>
+                    <span class="pr-i1 mb-2 d-md-block d-none pr-i2">
+                      <i><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="15"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class=" mt-0  icon-tabler icons-tabler-outline icon-tabler-arrows-maximize"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M16 4l4 0l0 4" />
+                        <path d="M14 10l6 -6" />
+                        <path d="M8 20l-4 0l0 -4" />
+                        <path d="M4 20l6 -6" />
+                        <path d="M16 20l4 0l0 -4" />
+                        <path d="M14 14l6 6" />
+                        <path d="M8 4l-4 0l0 4" />
+                        <path d="M4 4l6 6" />
+                      </svg>
+                    </i>
+                    </span>
+                   <span class="pr-i1 pr-i2-svg"><i class="bi bi-bag"></i></span> 
+                  </div>
+                </div>
+              </div>
+              <div class="pagination d-flex justify-content-between mb-1">
+                <div class="page-bar hovered"></div>
+                <div class="page-bar1"></div>
+                <div class="page-bar2"></div>
+                <div class="page-bar3"></div>
+              </div>
+              <div class="product-detail pt-1 pb-2">
+                <h6 class="d-flex align-items-center py-1">
+                  <img src="./star (7).png" onerror="this.src='https://media.genics.in/common/image-place-holder.webp'" alt="" width="13px" height="13px"
+                    onerror="this.src='https:media.genics.in/common/image-place-holder.webp'"
+                    alt="product/thumbnail/1690608428_9967.webp /">
+                    &nbsp; 1 reviews
+                </h6>
+                <h5>Basics Smartphone</h5>
+                <p><del>$25.90</del> $19.90</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 pt-lg-0 pt-3 best-sell-cols">
+            <div class="product-bg">
+              <div class="product-head9 d-flex position-relative">
+                <div class="bt-sellbox-h5">
+                  <h5 class="product-box">24%</h5>
+                  <h5 class="product-box">New</h5>
+                </div>
+                <div class="product-box1"></div>
+                <div class="product-box2"></div>
+                <div class="product-icons product-box3">
+                  <div class="pr-icon bt-sell-icon">
+                    <span class="pr-i1 d-md-block d-none"><i class="bi bi-heart"></i></span>
+                    <span class="pr-i1 d-md-block d-none"><i class="bi bi-repeat mt-2 mb-2"></i></span>
+                    <span class="pr-i1 mb-2 d-md-block d-none pr-i2">
+                      <i><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="15"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class=" mt-0  icon-tabler icons-tabler-outline icon-tabler-arrows-maximize"
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M16 4l4 0l0 4" />
+                        <path d="M14 10l6 -6" />
+                        <path d="M8 20l-4 0l0 -4" />
+                        <path d="M4 20l6 -6" />
+                        <path d="M16 20l4 0l0 -4" />
+                        <path d="M14 14l6 6" />
+                        <path d="M8 4l-4 0l0 4" />
+                        <path d="M4 4l6 6" />
+                      </svg>
+                    </i>
+                    </span>
+                   <span class="pr-i1 pr-i2-svg"><i class="bi bi-bag"></i></span> 
+                  </div>
+                </div>
+              </div>
+              <div class="pagination d-flex justify-content-between mb-1">
+                <div class="page-bar hovered"></div>
+                <div class="page-bar1"></div>
+                <div class="page-bar2"></div>
+                <div class="page-bar3"></div>
+              </div>
+              <div class="product-detail pt-1 pb-2">
+                <h6 class="d-flex align-items-center py-1">
+                  <img src="./star (7).png" onerror="this.src='https://media.genics.in/common/image-place-holder.webp'" alt="" width="13px" height="13px"
+                    onerror="this.src='https:media.genics.in/common/image-place-holder.webp'"
+                    alt="product/thumbnail/1690608428_9967.webp /">
+                    &nbsp; 1 reviews
+                </h6>
+                <h5>Basics Smartphone</h5>
+                <p><del>$25.90</del> $19.90</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-6 pt-lg-0 pt-3 best-sell-cols">
+            <div class="product-bg">
+              <div class="product-head10 d-flex position-relative">
+                <div class="bt-sellbox-h5">
+                  <h5 class="product-box">24%</h5>
+                  <h5 class="product-box">New</h5>
+                </div>
+                <div class="product-box1"></div>
+                <div class="product-box2"></div>
+                <div class="product-icons product-box3">
+                  <div class="pr-icon bt-sell-icon">
+                    <span class="pr-i1 d-md-block d-none"><i class="bi bi-heart "></i></span>
+                    <span class="pr-i1 d-md-block d-none"><i class="bi bi-repeat mt-2 mb-2"></i></span>
+                    <span class="pr-i1 mb-2 d-md-block d-none pr-i2">
+                      <i><svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="15"
+                        height="15"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        stroke-width="2"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        class=" mt-0 icon-tabler icons-tabler-outline icon-tabler-arrows-maximize "
+                      >
+                        <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                        <path d="M16 4l4 0l0 4" />
+                        <path d="M14 10l6 -6" />
+                        <path d="M8 20l-4 0l0 -4" />
+                        <path d="M4 20l6 -6" />
+                        <path d="M16 20l4 0l0 -4" />
+                        <path d="M14 14l6 6" />
+                        <path d="M8 4l-4 0l0 4" />
+                        <path d="M4 4l6 6" />
+                      </svg>
+                    </i>
+                    </span>
+                   <span class="pr-i1 pr-i2-svg"><i class="bi bi-bag"></i></span> 
+                  </div>
+                </div>
+              </div>
+              <div class="pagination d-flex justify-content-between mb-1">
+                <div class="page-bar hovered"></div>
+                <div class="page-bar1"></div>
+                <div class="page-bar2"></div>
+                <div class="page-bar3"></div>
+              </div>
+              <div class="product-detail pt-1 pb-2">
+                <h6 class="d-flex align-items-center py-1">
+                  <img src="./star (7).png" onerror="this.src='https://media.genics.in/common/image-place-holder.webp'" alt="" width="13px" height="13px"
+                    onerror="this.src='https:media.genics.in/common/image-place-holder.webp'"
+                    alt="product/thumbnail/1690608428_9967.webp /">
+                    &nbsp; 1 reviews
+                </h6>
+                <h5>Basics Smartphone</h5>
+                <p><del>$25.90</del> $19.90</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </section>
+    <!--  -->
+
   <!-- Govind Sir Code Start -->
   <!-- ----------------------- section 6 start------------------------------ -->
-  <section class="demo mb-5 pb-md-5">
+  <section class="demo mb-md-5 pb-3 mb-2 pb-md-5">
     <div class="container-fluid">
       <div class="row">
         <div class="col-lg-8">
@@ -1087,9 +1447,9 @@
   <!-- --------------------section 7 ------------------------------ -->
   <section class="position-relative">
     <div class="container-lg container-fluid-md monial-container">
-      <div class="monial-heading pt-xl-5 pt-3">
-        <h1>Latest Buyers Reviews</h1>
-        <p class="text-center">
+      <div class="monial-heading d-flex align-items-md-center pt-md-5 pt-1">
+        <h1 class="py-md-1 py-0 tex-md-center">Latest Buyers Reviews</h1>
+        <p class="text-md-center">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis
           ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas
@@ -1097,7 +1457,7 @@
         </p>
       </div>
       <div id="carousel2" class="owl-carousel owl-carousel-two owl-theme">
-        <div class="item monial-item pt-xl-5 mt-xl-4 pt-1 mt-1 pb-xl-4 pb-1 mb-xl-2 mb-1">
+        <div class="item monial-item pt-md-4 mt-md-1 pt-1 mt-1 pb-xl-4 pb-10 mb-xl-2 mb-0">
           <div class="card border-0 rounded-0 monial-card">
             <img src="./images/profile.jpg" onerror="this.src='https://media.genics.in/common/image-place-holder.webp'" alt="" class="card-img w-25">
             <div class="card-body monial-body">
@@ -1109,7 +1469,7 @@
                 <i class="bi bi-star-fill"></i>
               </div>
               <div class="monial-text">
-                <p class="card-text text-center py-3">
+                <p class="card-text text-center py-md-3 py-1">
                   Quis ipsum suspendisse ultrices gravida. Risus commodo
                   viverra maecenas accumsan facilisis.
                 </p>
@@ -1118,7 +1478,7 @@
             </div>
           </div>
         </div>
-        <div class="item monial-item pt-xl-5 mt-xl-4 pt-1 mt-1 pb-xl-4 pb-1 mb-xl-2 mb-1">
+        <div class="item monial-item pt-md-4 mt-md-1 pt-1 mt-1 pb-xl-4 pb-0 mb-xl-2 mb-0">
           <div class="card border-0 rounded-0 monial-card m-card1">
             <img src="./images/profile.jpg" onerror="this.src='https://media.genics.in/common/image-place-holder.webp'" alt="" class="card-img w-25">
             <div class="card-body monial-body">
@@ -1130,7 +1490,7 @@
                 <i class="bi bi-star-fill"></i>
               </div>
               <div class="monial-text">
-                <p class="card-text text-center py-3">
+                <p class="card-text text-center py-md-3 py-1">
                   Quis ipsum suspendisse ultrices gravida. Risus commodo
                   viverra maecenas accumsan facilisis.
                 </p>
@@ -1139,7 +1499,7 @@
             </div>
           </div>
         </div>
-        <div class="item monial-item pt-xl-5 mt-xl-4 pt-1 mt-1 pb-xl-4 pb-1 mb-xl-2 mb-1">
+        <div class="item monial-item pt-md-4 mt-md-1 pt-1 mt-1 pb-xl-4 pb-0 mb-xl-2 mb-0">
           <div class="card border-0 rounded-0 monial-card">
             <img src="./images/profile.jpg" onerror="this.src='https://media.genics.in/common/image-place-holder.webp'" alt="" class="card-img w-25">
             <div class="card-body monial-body">
@@ -1151,7 +1511,7 @@
                 <i class="bi bi-star-fill"></i>
               </div>
               <div class="monial-text">
-                <p class="card-text text-center py-3">
+                <p class="card-text text-center py-md-3 py-1">
                   Quis ipsum suspendisse ultrices gravida. Risus commodo
                   viverra maecenas accumsan facilisis.
                 </p>
@@ -1238,7 +1598,7 @@
                   </h5>
                   <h6 class="pb-0">$29.90 – $39.90</h6>
                 </span>
-                <div class="sixth-review pt-3">
+                <div class="sixth-review pt-md-3 pt-1">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
@@ -1247,7 +1607,7 @@
                   &nbsp; <span>2 reviews</span>
                 </div>
                 <div class="sixth-para">
-                  <p class="card-text pt-3 pb-3">
+                  <p class="card-text pt-md-3 pt-2 pb-md-3 pb-1">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
@@ -1319,7 +1679,7 @@
                   <h5 class="card-title pb-1">Blue Starter Logo T-shirt</h5>
                   <h6 class="pb-0 s-p2"><del>$22.70</del>&nbsp; $18.70</h6>
                 </span>
-                <div class="sixth-review pt-3">
+                <div class="sixth-review pt-md-3 pt-1">
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
                   <i class="bi bi-star-fill"></i>
@@ -1328,7 +1688,7 @@
                   &nbsp; <span>1 reviews</span>
                 </div>
                 <div class="sixth-para">
-                  <p class="card-text pt-3 pb-3">
+                  <p class="card-text pt-md-3 pt-2 pb-md-3 pb-1">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                     sed do eiusmod tempor incididunt ut labore et dolore magna
                     aliqua.
@@ -1489,7 +1849,7 @@
                   <a href="#" class="nav-link">+1 246-345-0695</a>
                 </li>
 
-                <li class="nav-item  pt-lg-4 pt-2">
+                <li class="nav-item  pt-lg-4 pt-2 py-0">
                   <nav class="navbar navbar-expand">
 
                     <ul class="navbar-nav gap-3 ">
@@ -1722,16 +2082,20 @@
   <script>
     const NewswiperEl = document.querySelector('.swiper-container1')
     Object.assign(NewswiperEl, {
-      // slidesPerView:7,
+      slidesPerView:7,
       spaceBetween: 10,
       pagination: {
+        el: '.swiper-pagination3',
         clickable: true,
+        renderBullet: function (index, className) {
+          return '<span class="' + className + '"></span>';
+        },
       },
       breakpoints: {
         0: {
-          slidesPerView: 1,
+          slidesPerView: 2,
         },
-        500: {
+        420: {
           slidesPerView: 2,
           spaceBetween: 10,
         },
@@ -1769,10 +2133,7 @@
         prevEl: ".swiper-button-prev-custom",
       },
       breakpoints: {
-        0: {
-          slidesPerView: 1,
-          spaceBetween: 0,
-        },
+    
         320: {
           slidesPerView: 1
         },
@@ -1845,6 +2206,46 @@
     integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
     crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+
+<!-- Best Seller Scripts Start -->
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const products = document.querySelectorAll('.best-sell-cols'); // Corrected selector
+  
+    products.forEach(product => {
+      const productHead = product.querySelector('.product-head7, .product-head8, .product-head9, .product-head10');
+      const productBox = product.querySelector('.product-box');
+      const productBox1 = product.querySelector('.product-box1');
+      const productBox2 = product.querySelector('.product-box2');
+      const productBox3 = product.querySelector('.product-box3');
+      const pageBars = product.querySelectorAll('.page-bar, .page-bar1, .page-bar2, .page-bar3');
+      const pageBar1 = product.querySelector('.page-bar1');
+      const pageBar2 = product.querySelector('.page-bar2');
+      const pageBar3 = product.querySelector('.page-bar3');
+  
+      function handleMouseOver(box, imageUrl, head, bar) {
+        box.addEventListener('mouseover', function () {
+          head.style.backgroundImage = `url('${imageUrl}')`;
+          pageBars.forEach(bar => bar.classList.remove('hovered'));
+          bar.classList.add('hovered');
+        });
+  
+        box.addEventListener('mouseout', function () {
+          head.style.backgroundImage = "";
+          bar.classList.remove('hovered');
+        });
+      }
+  
+      handleMouseOver(productBox, 'product-img/smartphone1.jpg', productHead, pageBars[0]);
+      handleMouseOver(productBox1, 'product-img/smartphone2.jpg', productHead, pageBar1);
+      handleMouseOver(productBox2, 'product-img/smartphone3.jpg', productHead, pageBar2);
+      handleMouseOver(productBox3, 'product-img/smartphone4.jpg', productHead, pageBar3);
+    });
+  });
+  
+  </script>
+  <!-- Best Seller Scripts End -->
 
   <!-- First Owl Carousel -->
   <script>
@@ -1927,6 +2328,51 @@
       });
     });
   </script>
+
+  <!-- Header Script -->
+  <script>
+    window.addEventListener('scroll', function() {
+      var header = document.getElementById('main-header');
+      if (window.scrollY > 0 && window.innerWidth < 992) {
+        header.classList.add('sticky');
+      } else {
+        header.classList.remove('sticky');
+      }
+    });
+  
+    window.addEventListener('resize', function() {
+      var header = document.getElementById('main-header');
+      if (window.innerWidth >= 992) {
+        header.classList.remove('sticky');
+      }
+    });
+  </script>
+   <!--  -->
+     <!-- Header dropdow btn Categories Script -->
+     <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var dropdownButton = document.getElementById('dropdownMenuButton');
+        var dropdownMenu = document.querySelector('.drp-menu1');
+    
+        dropdownButton.addEventListener('click', function(event) {
+          event.stopPropagation();
+          dropdownMenu.classList.toggle('custom-show');
+          dropdownMenu.classList.toggle('custom-hide');
+        });
+    
+        document.addEventListener('click', function(event) {
+          if (!dropdownButton.contains(event.target) && dropdownMenu.classList.contains('custom-show')) {
+            dropdownMenu.classList.remove('custom-show');
+            dropdownMenu.classList.add('custom-hide');
+          }
+        });
+    
+        dropdownMenu.addEventListener('click', function(event) {
+          event.stopPropagation();
+        });
+      });
+    </script>
+      <!--  -->
 </body>
 
 </html>

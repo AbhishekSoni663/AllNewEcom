@@ -120,6 +120,9 @@ font-size: var(--font-16);
 width: 65%;
 opacity: 0.6;
 }
+.lst-p-h1{
+  font-size: var(--font-34);
+}
 .product-head{
   background-image: url(../product-img/smartphone1.jpg), url('https://media.genics.in/common/image-place-holder.webp');
   background-size: cover;
@@ -302,7 +305,7 @@ color: var(--color-two);
 }
 
 .page-bar ,.page-bar1, .page-bar2,.page-bar3 {
-  width: 65px;
+  width: 25%;
   height: 4px;
   background-color: var(--background-nine);
   margin: 5px;
@@ -378,33 +381,39 @@ li {
 @media(max-width:768px){
   .phone_img1, .phone_img2 , .phone_img3{
     width: 100%;
-    height: 540px !important;
+    height: 540px;
 }
 .lst-p{
   font-size: var(--font-13);
   width: 100% !important;
   opacity: 0.6;
   }
+  .lst-p-h1{
+    font-size: var(--font-23);
+  }
 }
 .phone_img1 {
-  background: linear-gradient(to left ,  black 10%, transparent 60%),url(../images/phono-slider-1.webp) , url('https://media.genics.in/common/image-place-holder.webp');
+  background: url(../images/smartphon.avif) , url('https://media.genics.in/common/image-place-holder.webp');
   width: 100%;
   height: 700px;
   background-position: center;
   background-size: cover;
+  background-repeat: no-repeat;
 }
 .phone_img2 {
-  background: linear-gradient(to left ,  black 10%, transparent 60%), url(../images/smartphone4.jpg), url(https://media.genics.in/common/image-place-holder.webp);
+  background: url(../images/smartphon.avif), url(https://media.genics.in/common/image-place-holder.webp);
   height: 700px;
   background-size: cover;
+  background-repeat: no-repeat;
   background-position: center;
 }
 .phone_img3 {
-  background:linear-gradient(to left ,  black 10%, transparent 60%), url(../images/phono-slider-3.webp), url('https://media.genics.in/common/image-place-holder.webp');
+  background: url(../images/smartphon.avif), url('https://media.genics.in/common/image-place-holder.webp');
   width: 100%;
   height: 700px;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 .carousel-caption {
   position: absolute;
@@ -591,6 +600,7 @@ h5.product-box {
   margin: 10px;
   display: flex;
   padding: 0 12px;
+  justify-content: center;
   color: #47B484;
   width: 50px;
   font-family: Jost, sans-serif;
@@ -661,7 +671,10 @@ p.get_tex {
 }
 
 @media (max-width: 575px) {
-
+.icon_bg{
+  width: 75px;
+  height: 75px;
+}
 }
 @media (max-width: 505px) {
 .first-container {
@@ -917,7 +930,7 @@ p.boldtext {
 }
 .navbar-expand-lg .navbar-nav .dropdown-menu {
   width: 1260px;
-  left: -680px;
+  left: -400px;
   top: 43px;
 }
 /* top end  modal  */
@@ -1331,7 +1344,9 @@ transition:0.5s;
   .item-img p {
     font-size: 16px;
   }
-
+  .owl-theme .owl-nav.disabled+.owl-dots {
+    margin-top: 0px !important;
+}
 }
 @media(max-width:768px){
   .owl-one-head{
@@ -1339,6 +1354,16 @@ transition:0.5s;
     flex-direction: column !important;
     align-items: flex-start;
   }
+  .owl-b{
+    font-size: var(--font-13) !important;
+  }
+  .owl-c{
+    font-size: var(--font-11) !important;
+  }
+  .owl-one-head h6{
+    font-size: var(--font-23) !important;
+  }
+ 
 }
 
 .owl-one-head h6{
@@ -1354,6 +1379,7 @@ transition:0.5s;
 }
 .owl-c{
   opacity: 0.4;
+  font-size: var(--font-12);
 }
 /* abhisheck  */
 
@@ -1378,12 +1404,12 @@ transition:0.5s;
   justify-content: space-around;
 }
 .monial-text p {
-  font-family: "Jost", sans-serif;
+  font-family: var(--Jost-sans-serif);
   font-size: 18px;
 }
 .monial-text h6 {
-  font-family: "Jost", sans-serif;
-  font-size: 16px;
+  font-family: var(--Jost-sans-serif);
+  font-size: var(--font-16);
   color: #b2b2b2;
 }
 /* .owl-carousel-two {
@@ -1392,42 +1418,45 @@ transition:0.5s;
 .monial-heading {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 .monial-heading h1 {
-  font-family: "Jost", sans-serif;
-  font-size: 30px;
+  font-family: var(--Jost-sans-serif);
+  font-size: var(--font-30);
 }
 .monial-heading p {
-  font-family: "Jost", sans-serif;
+  font-family: var(--Jost-sans-serif);
   max-width: 69%;
   color: #be8b94;
-  font-weight: 300;
-  font-size: 18px;
+  font-weight: var(--font-weight-300);
+  font-size: var(--font-18);
 }
 @media (max-width: 768px) {
   .monial-body {
     padding-left: 0px;
     padding-right: 0px;
+    display: flex;
+    justify-content: space-evenly;
   }
   .monial-card {
     /* / border-right: 1px solid #ebebeb !important; / */
     border-left: none !important;
   }
   .monial-heading h1 {
-    font-size: 20px;
+    font-size: var(--font-23);
   }
   .monial-heading p {
-    font-size: 13px;
+    font-size: var(--font-13);
     max-width: 100%;
-    font-weight: 400;
+    font-weight: var(--font-400);
   }
   .monial-text {
     width: 100%;
   }
   .monial-text p {
-    font-size: 17px;
+    font-size: var(--font-15);
+  }
+  .monial-text h6{
+    font-size: var(--font-14);
   }
   .custom-navOne {
     display: none !important;
@@ -1477,50 +1506,50 @@ transition:0.5s;
 /* Section 8 Deals Css Start */
 
 .sixth-box-head h1{
-  font-size: 29px;
-  font-weight: 500;
+  font-size: var(--font-29);
+  font-weight: var(--font-weight-500);
   font-family: "Jost", sans-serif;
 }
 .sixth-text p{
   opacity: 0.6;
-  font-size: 17px;
-  font-weight: 300;
+  font-size: var(--font-17);
+  font-weight: var(--font-weight-300);
 }
 .sixth-review i{
   color: var(--color-twentyfour);
-  font-size: 12px;
+  font-size: var(--font-12);
 }
 .sixth-review span{
-  font-size: 14px;
-  font-weight: 600;
+  font-size: var(--font-14);
+  font-weight: var(--font-weight-600);
   opacity: 0.8;
 }
 .sixth-offer-box h6{
-  font-size: 14px !important;
-  font-weight: 500;
+  font-size: var(--font-14) !important;
+  font-weight: var(--font-weight-500);
 }
 .s-box1{
   background-color: var(--background-thirtyfour);
   padding: 8px 8px;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: var(--font-15);
+  font-weight: var(--font-weight-500);
   text-align: center;
 }
 .sixth-para p{
   opacity: 0.7;
-  font-size: 14px;
+  font-size: var(--font-14);
 }
 .sixth-body1 h5 , .sixth-body2 h5{
-  font-size: 20px;
-  font-weight: 400;
+  font-size: var(--font-20);
+  font-weight: var(--font-weight-400);
 }
 .sixth-body1 h6 , .sixth-body2 h6{
-  font-size: 18px;
-  font-weight: 500;
+  font-size: var(--font-18);
+  font-weight: var(--font-weight-500);
 }
 .s-p2 del{
 opacity: 0.3;
-font-size: 17px;
+font-size: var(--font-17);
 font-weight: 400;
 }
 .s-p2{
@@ -1532,15 +1561,15 @@ font-weight: 400;
 }
 .s-b b{
   color: var(--color-primary);
-  font-size: 14px;
+  font-size: var(--font-14);
 }
 
 @media(max-width:375px){
   .sixth-box-head h1{
-    font-size: 25px;
+    font-size: var(--font-25);
   }
   .sixth-text p{
-    font-size: 15px;
+    font-size: var(--font-15);
   }
   .s-img1 , .s-img2{
     height: 390px !important;
@@ -1568,6 +1597,12 @@ font-weight: 400;
 @media(max-width:768px){
   .sixth-trend-head h5{
     font-size: 16px;
+  }
+  .sixth-box-head h1{
+    font-size: var(--font-23);
+  }
+  .sixth-text p{
+    font-size: var(--font-14);
   }
 }
 
@@ -1670,10 +1705,10 @@ font-weight: 400;
     width: 100%;
   }
   .seventh-head h1{
-    font-size: var(--font-27);
+    font-size: var(--font-23);
   }
   .seventh-head p{
-    font-size: var(--font-15);
+    font-size: var(--font-14);
   }
 }
 .s-a1{
@@ -1699,3 +1734,283 @@ color: var(--color-black);
   opacity: 0.5;
 }
 /* Latest News Section 10 css End */
+
+
+.swiper-container1 .swiper-pagination3 {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media(max-width:767px){
+ .second-drop{
+  width: 70px !important;
+ }
+ .third-cat-btn{
+  background-color: white !important;
+ }
+}
+
+.swiper-container1 .swiper-pagination3 .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border-radius: 50%;
+  margin: 0 5px;
+  transition: background-color 0.3s;
+}
+
+.swiper-container1 .swiper-pagination3 .swiper-pagination-bullet-active {
+  background-color: #007bff;
+}
+
+/* Main Header Css */
+#main-header {
+  position: static;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 991px) {
+  #main-header.sticky {
+    position: fixed;
+    top: 0;
+    background-color: white; /* Adjust as needed */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+/*  */
+
+
+.custom-show {
+  display: block !important;
+}
+.custom-hide {
+  display: none !important;
+}
+
+
+/* Best Seller Product Css Start */
+
+.product-head7{
+  background-image: url(../product-img/smartphone1.jpg), url('https://media.genics.in/common/image-place-holder.webp');
+  background-size: cover;
+  height: 445px;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.product-head8{
+  background-image: url(../product-img/smartphone2.jpg), url('https://media.genics.in/common/image-place-holder.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 445px;
+}
+.product-head9{
+  background-image: url(../product-img/smartphone3.jpg), url('https://media.genics.in/common/image-place-holder.webp');
+  background-repeat: no-repeat;
+  height: 445px;
+  background-position: center;
+  background-size: cover;
+}
+.product-head10{
+  background-image: url(../product-img/smartphone4.jpg), url('https://media.genics.in/common/image-place-holder.webp');
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 445px;
+  background-position: center;
+  
+}
+
+.product-head7 , .product-head8 , .product-head9 , .product-head10{
+  width: 100%;
+
+  background-color: var(---white-light);
+  transition: background-image 0.3s;
+}
+/*  */
+@media(max-width:992px){
+  .product-head7 , .product-head8 , .product-head9 , .product-head10{
+    height: 578px;
+  }
+  
+}
+@media(max-width:768px){
+  .product-head7 , .product-head8 , .product-head9 , .product-head10{
+    height: 489px;
+  }
+  .best-seller .pagination .page-bar,
+  .best-seller .pagination .page-bar1,
+  .best-seller .pagination .page-bar2,
+  .best-seller .pagination .page-bar3 {
+    display: none;
+  }
+  .bt-s-p{
+    font-size: var(--font-13) !important;
+    width: 100% !important;
+  }
+  .bt-s-h1{
+    font-size: var(--font-24);
+  }
+  .bt-sell-icon{
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    align-items: center;
+    justify-content: end;
+    position: absolute !important;
+    right: 15px !important;
+    bottom: 12px !important;
+  }
+  .best-seller .pagination .hovered {
+    visibility: hidden;
+  }
+
+}
+@media(max-width:575px){
+  .product-head7 , .product-head8 , .product-head9 , .product-head10{
+    height: 405px;
+  }
+  .bt-sellbox-h5 h5{
+    font-size: 10px;
+    width: 32px;
+    margin: 7px;
+    height: 16px;
+  }
+  .pr-i2-svg i{
+font-size: 11px !important;
+padding: 6px 6px;
+  }
+}
+.bt-s-p{
+  font-size: var(--font-16);
+  opacity: 0.5;
+  width: 75%;
+}
+
+@media(max-width:475px){
+  .product-head7 , .product-head8 , .product-head9 , .product-head10{
+    height: 325px;
+  }
+}
+@media(max-width:398px){
+  .product-head7 , .product-head8 , .product-head9 , .product-head10{
+    height: 255px;
+  }
+}
+@media(max-width:330px){
+  .product-head7 , .product-head8 , .product-head9 , .product-head10{
+    height: 185px;
+  }
+}
+
+/* Best Seller Product Css End */
+
+
+/* Govind Sir Css Start */
+/* / mobile css / */
+@media screen and (max-width: 1024px) {
+  .entry-title {
+    font-size: 18px;
+   margin-bottom: 6px;
+  }
+  .entry-title1 {
+    font-size: 18px;
+    font-family: "Jost", sans-serif;
+    margin-bottom: 6px;
+
+}
+.entry-description p{
+margin-bottom: 1px;
+}
+.entry-description1 p {
+  margin-bottom: 1px !important;
+}
+}
+
+@media screen and (max-width: 768px) {
+  .arrow {
+    bottom: 13px;
+    left: 13px;
+  }
+  .ifhone  {
+   padding-right: 5px !important;
+  } 
+  .ifhone1 {
+    padding-left: 5px !important;
+  }
+  .phone_img1 {   
+    background-size: cover;
+    height: 430px;   
+  }
+  .phone_img2 {
+    background-size: cover;
+    height: 430px;  
+  }
+  .phone_img3 {
+    background-size: cover;
+    height: 430px;  
+  }
+  
+}
+
+@media screen and (max-width: 575px) {
+  .arrow {
+    bottom: 6px;
+    left: 11px;
+  }
+  .link {
+    font-size: 10px !important;
+}
+.phone_img1, .phone_img2, .phone_img3 {
+  width: 100%;
+  height: 324px !important;
+}
+}
+@media screen and (max-width: 425px) {
+.arrow {
+  bottom: 3px;
+  left: 8px;
+}
+.phone_img1, .phone_img2, .phone_img3 {
+  width: 100%;
+  height: 240px !important;
+}
+}
+
+
+@media screen and (max-width: 375px) {
+  .phone_img1, .phone_img2, .phone_img3 {
+    width: 100%;
+    height: 211px !important;
+}
+  .iphones {
+    display: block !important;
+   
+}
+
+.arrow {
+  bottom: 7px;
+  left: 15px;
+}
+.ifhone  {
+  width: 100% !important;
+  padding-right: 12px !important;
+} 
+.ifhone1 {
+  padding-top: 10px;
+  width: 100% !important;
+  padding-left: 12px !important;
+
+}
+.link {
+  font-size: 13px !important;
+}
+}
+/* Govind Sir Css End */
